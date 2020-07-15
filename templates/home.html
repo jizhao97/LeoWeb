@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+    p.text{
+    font-family: helvetica, arial;
+    color: #88fbbe;
+    text-align: center;
+    }
+
+    p.title{
+    padding-top: 25px;
+    padding-bot: 5px;
+    font-size: 50px;
+    }
+
+    img{
+    padding-top: 25px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 25%;
+    }
+    </style>
+
+    <title>Leo's House of Wisdom</title>
+</head>
+<body style="background-color: #444553">
+
+<p class="text title">Welcome to Leo's House of Wisdom!</p>
+<p class="text">wow so doge much retard uwu</p>
+{% for item in items %}
+<img src="{{item}}">
+{% endfor %}
+</body>
+</html>
