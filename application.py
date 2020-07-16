@@ -1,9 +1,9 @@
 from flask import Flask, render_template
-from flask_pymongo import PyMongo
+#from flask_pymongo import PyMongo
 
 app = Flask(__name__)
-app.config["MONGO_URI"] = "mongodb://localhost:27017/admin"
-mongo = PyMongo(app)
+#app.config["MONGO_URI"] = "mongodb://localhost:27017/admin"
+#mongo = PyMongo(app)
 
 #leos_collection = mongo.db.leos
 
@@ -17,8 +17,9 @@ mongo = PyMongo(app)
 @app.route("/")
 @app.route("/home")
 def home():
-    url_collection = mongo.db.leos.find()
-    return render_template("home.html", items=url_collection.distinct('url'))
+    #url_collection = mongo.db.leos.find()
+    #return render_template("home.html", items=url_collection.distinct('url'))
+    return "Hello World!"
 
 
 if __name__ == "__main__":
